@@ -19,6 +19,10 @@
 //     }
     
 // }
+// * * * * 
+// * * * *
+// * * * *
+// * * * *
 
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -39,6 +43,10 @@
 //     }
 //     return 0;
 // }
+// *
+// * *
+// * * *
+// * * * *
 
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -59,6 +67,9 @@
 //     }
 //     return 0;
 // }
+// 1
+// 1 2
+// 1 2 3 
 
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -79,6 +90,10 @@
 //     }
 //     return 0;
 // }
+// 1 
+// 2 2 
+// 3 3 3 
+// 4 4 4 4
 
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -99,6 +114,11 @@
 //     }
 //     return 0;
 // }
+// * * * * *
+// * * * *
+// * * *
+// * *
+// * 
 
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -119,6 +139,9 @@
 //     }
 //     return 0;
 // }
+// 1 2 3
+// 1 2 
+// 1
 
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -149,7 +172,10 @@
 //     }
 //     return 0;
 // }
-
+//     *    
+//    ***   
+//   *****  
+//  ******* 
 // another way of pattern 7
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -180,6 +206,10 @@
 //     }
 //     return 0;
 // }
+//     ***    
+//    *****   
+//   *******  
+//  ********* 
 
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -210,7 +240,11 @@
 //     }
 //     return 0;
 // }
+//  ***** 
+//   ***  
+//    *   
 
+// another way to print8
 // #include <bits/stdc++.h>
 // using namespace std;
 // void print8(int n){
@@ -240,7 +274,12 @@
 //     }
 //     return 0;
 // }
+//  ********* 
+//   *******  
+//    *****   
+//     ***   
 
+// combination of pattern 7 and 8
 #include <bits/stdc++.h>
  using namespace std;
 void print7(int n){
@@ -289,3 +328,11 @@ int main(){
     }
     return 0;
 }
+//     ***    
+//    *****   
+//   *******  
+//  ********* 
+//  ********* 
+//   *******  
+//    *****   
+//     ***    
