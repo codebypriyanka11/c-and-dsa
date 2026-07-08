@@ -24,6 +24,7 @@
 // * * * *
 // * * * *
 
+
 // #include <bits/stdc++.h>
 // using namespace std;
 // void print2(int n){
@@ -48,6 +49,7 @@
 // * * *
 // * * * *
 
+
 // #include <bits/stdc++.h>
 // using namespace std;
 // void print3(int n){
@@ -70,6 +72,7 @@
 // 1
 // 1 2
 // 1 2 3 
+
 
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -94,6 +97,7 @@
 // 2 2 
 // 3 3 3 
 // 4 4 4 4
+
 
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -120,6 +124,7 @@
 // * *
 // * 
 
+
 // #include <bits/stdc++.h>
 // using namespace std;
 // void print6(int n){
@@ -142,6 +147,7 @@
 // 1 2 3
 // 1 2 
 // 1
+
 
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -211,6 +217,7 @@
 //   *******  
 //  ********* 
 
+
 // #include <bits/stdc++.h>
 // using namespace std;
 // void print8(int n){
@@ -243,6 +250,7 @@
 //  ***** 
 //   ***  
 //    *   
+
 
 // another way to print8
 // #include <bits/stdc++.h>
@@ -278,6 +286,7 @@
 //   *******  
 //    *****   
 //     ***   
+
 
 // combination of pattern 7 and 8
 #include <bits/stdc++.h>
