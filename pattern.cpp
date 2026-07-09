@@ -17,9 +17,9 @@
 //         // cin>>n;
 //         print(n);
 //     }
-    
+
 // }
-// * * * * 
+// * * * *
 // * * * *
 // * * * *
 // * * * *
@@ -59,7 +59,7 @@
 //         }
 //          cout<<endl;
 //     }
-   
+
 // }
 // int main(){
 //     int t=1;
@@ -71,8 +71,7 @@
 // }
 // 1
 // 1 2
-// 1 2 3 
-
+// 1 2 3
 
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -83,7 +82,7 @@
 //         }
 //          cout<<endl;
 //     }
-   
+
 // }
 // int main(){
 //     int t=1;
@@ -93,9 +92,9 @@
 //     }
 //     return 0;
 // }
-// 1 
-// 2 2 
-// 3 3 3 
+// 1
+// 2 2
+// 3 3 3
 // 4 4 4 4
 
 
@@ -108,7 +107,7 @@
 //         }
 //          cout<<endl;
 //     }
-   
+
 // }
 // int main(){
 //     int t=1;
@@ -122,8 +121,7 @@
 // * * * *
 // * * *
 // * *
-// * 
-
+// *
 
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -134,7 +132,7 @@
 //         }
 //          cout<<endl;
 //     }
-   
+
 // }
 // int main(){
 //     int t=1;
@@ -145,7 +143,7 @@
 //     return 0;
 // }
 // 1 2 3
-// 1 2 
+// 1 2
 // 1
 
 
@@ -168,7 +166,7 @@
 //         }
 //          cout<<endl;
 //     }
-   
+
 // }
 // int main(){
 //     int t=1;
@@ -178,10 +176,10 @@
 //     }
 //     return 0;
 // }
-//     *    
-//    ***   
-//   *****  
-//  ******* 
+//     *
+//    ***
+//   *****
+//  *******
 // another way of pattern 7
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -202,7 +200,7 @@
 //         }
 //          cout<<endl;
 //     }
-   
+
 // }
 // int main(){
 //     int t=1;
@@ -212,11 +210,10 @@
 //     }
 //     return 0;
 // }
-//     ***    
-//    *****   
-//   *******  
-//  ********* 
-
+//     ***
+//    *****
+//   *******
+//  *********
 
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -237,7 +234,7 @@
 //         }
 //          cout<<endl;
 //     }
-   
+
 // }
 // int main(){
 //     int t=1;
@@ -247,10 +244,9 @@
 //     }
 //     return 0;
 // }
-//  ***** 
-//   ***  
-//    *   
-
+//  *****
+//   ***
+//    *
 
 // another way to print8
 // #include <bits/stdc++.h>
@@ -272,7 +268,7 @@
 //         }
 //          cout<<endl;
 //     }
-   
+
 // }
 // int main(){
 //     int t=1;
@@ -282,11 +278,10 @@
 //     }
 //     return 0;
 // }
-//  ********* 
-//   *******  
-//    *****   
-//     ***   
-
+//  *********
+//   *******
+//    *****
+//     ***
 
 // combination of pattern 7 and 8
 // #include <bits/stdc++.h>
@@ -326,7 +321,7 @@
 //         }
 //          cout<<endl;
 //     }
-   
+
 // }
 // int main(){
 //     int t=1;
@@ -337,15 +332,14 @@
 //     }
 //     return 0;
 // }
-//     ***    
-//    *****   
-//   *******  
-//  ********* 
-//  ********* 
-//   *******  
-//    *****   
-//     ***    
-
+//     ***
+//    *****
+//   *******
+//  *********
+//  *********
+//   *******
+//    *****
+//     ***
 
 // #include <iostream>
 // using namespace std;
@@ -378,46 +372,98 @@
 
 #include <iostream>
 using namespace std;
-void print11(int n){
+void print11(int n)
+{
 
-    int start= 1;
-    for(int i=0; i<=n; i++){
-        if(i%2==0) start=1;
-        else start=0;
-        for(int j=1; j<=i; j++){
-            cout<<start;
-            start=1-start;
+    int start = 1;
+    for (int i = 0; i <= n; i++)
+    {
+        if (i % 2 == 0)
+            start = 1;
+        else
+            start = 0;
+        for (int j = 1; j <= i; j++)
+        {
+            cout << start;
+            start = 1 - start;
         }
-        cout<<endl;
+        cout << endl;
     }
 }
-void print12(int n){
+void print12(int n)
+{
 
-    int space= 2*(n-1);
-    for(int i=1; i<=n; i++){
+    int space = 2 * (n - 1);
+    for (int i = 1; i <= n; i++)
+    {
         // number
-        for(int j=1; j<=i; j++){
-            cout<<j; 
+        for (int j = 1; j <= i; j++)
+        {
+            cout << j;
         }
         // space
-        for(int j=1; j<=space; j++){
-            cout<<" "; 
+        for (int j = 1; j <= space; j++)
+        {
+            cout << " ";
         }
         // number
-        for(int j=i; j>=1; j--){
-            cout<<j; 
-           
+        for (int j = i; j >= 1; j--)
+        {
+            cout << j;
         }
-        cout<<endl;
-        space-=2;
+        cout << endl;
+        space -= 2;
     }
 }
-int main(){
-    int t=1;
-    for(int i=0; i<t; i++){
-        int n=4;
+void print13(int n)
+{
+    int num = 1;
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            cout<< num;
+           num = num+1;
+        }
+        cout<<endl;
+         
+    }
+}
+void print14(int n){
+    for(int i=1;i<=n;i++){
+        for(char ch ='A';ch<='A'+i;ch++){
+            cout<<ch;
+
+        }
+        cout<<endl;
+    }
+
+}
+void print15(int n){
+    for(int i=0;i<n;i++){
+        for(char ch='A'; ch<='A'+(n-i+1);ch++){
+            cout<<ch;
+        }
+        cout<<endl;
+    }
+}
+void print16(int n){
+    for(int i=0;i<n;i++){
+        char ch='A'+i;
+        for(int j=0 ;j<=i;j++){
+            cout<<ch;
+        }
+        cout<<endl;
+    }
+}
+int main()
+{
+    int t = 1;
+    for (int i = 0; i < t; i++)
+    {
+        int n = 4;
         // cin>>n;
-        print12(n);
+        print16(n);
     }
 }
 
