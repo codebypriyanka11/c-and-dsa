@@ -34,7 +34,7 @@
 //         }
 //          cout<<endl;
 //     }
-   
+
 // }
 // int main(){
 //     int t=1;
@@ -289,59 +289,135 @@
 
 
 // combination of pattern 7 and 8
-#include <bits/stdc++.h>
- using namespace std;
-void print7(int n){
-    // rows
-    for(int i = 1; i <= n; i++){
-    //    space
-        for(int j = 1; j <= n-i+1 ; j++){
-            cout<<" ";
+// #include <bits/stdc++.h>
+//  using namespace std;
+// void print7(int n){
+//     // rows
+//     for(int i = 1; i <= n; i++){
+//     //    space
+//         for(int j = 1; j <= n-i+1 ; j++){
+//             cout<<" ";
+//         }
+//         // stars
+//         for(int j = 1; j <= 3*i-(i-1); j++){
+//             cout<<"*";
+//         }
+//         // space
+//         for(int j = 1; j <= n-i+1 ; j++){
+//             cout<<" ";
+//         }
+//          cout<<endl;
+//     }
+// }
+// void print8(int n){
+//     // rows
+//     for(int i = 1; i <= n; i++){
+//     //    space
+//         for(int j = 1; j <= i; j++){
+//             cout<<" ";
+//         }
+//         // stars
+//         for(int j = 1; j <= 3*n-(2*i+1) ; j++){
+//             cout<<"*";
+//         }
+//         // space
+//         for(int j = 1; j <= i; j++){
+//             cout<<" ";
+//         }
+//          cout<<endl;
+//     }
+   
+// }
+// int main(){
+//     int t=1;
+//     for(int i=0; i<t; i++){
+//         int n=4;
+//         print7(n);
+//         print8(n);
+//     }
+//     return 0;
+// }
+//     ***    
+//    *****   
+//   *******  
+//  ********* 
+//  ********* 
+//   *******  
+//    *****   
+//     ***    
+
+
+// #include <iostream>
+// using namespace std;
+// void print10(int n){
+//     for(int i=1; i<=2*n-1; i++){
+//         int star=i;
+//         if(i>n) star=2*n-i;
+//         for(int j=1; j<=star; j++){
+//             cout<<"*";
+//         }
+//         cout<<endl;
+//     }
+// }
+// int main(){
+//     int t=1;
+//     for(int i=0; i<t; i++){
+//         int n=4;
+//         // cin>>n;
+//         print10(n);
+//     }
+// }
+// *
+// **
+// ***
+// ****
+// ***
+// **
+// *
+
+
+#include <iostream>
+using namespace std;
+void print11(int n){
+
+    int start= 1;
+    for(int i=0; i<=n; i++){
+        if(i%2==0) start=1;
+        else start=0;
+        for(int j=1; j<=i; j++){
+            cout<<start;
+            start=1-start;
         }
-        // stars
-        for(int j = 1; j <= 3*i-(i-1); j++){
-            cout<<"*";
-        }
-        // space
-        for(int j = 1; j <= n-i+1 ; j++){
-            cout<<" ";
-        }
-         cout<<endl;
+        cout<<endl;
     }
 }
-void print8(int n){
-    // rows
-    for(int i = 1; i <= n; i++){
-    //    space
-        for(int j = 1; j <= i; j++){
-            cout<<" ";
-        }
-        // stars
-        for(int j = 1; j <= 3*n-(2*i+1) ; j++){
-            cout<<"*";
+void print12(int n){
+
+    int space= 2*(n-1);
+    for(int i=1; i<=n; i++){
+        // number
+        for(int j=1; j<=i; j++){
+            cout<<j; 
         }
         // space
-        for(int j = 1; j <= i; j++){
-            cout<<" ";
+        for(int j=1; j<=space; j++){
+            cout<<" "; 
         }
-         cout<<endl;
+        // number
+        for(int j=i; j>=1; j--){
+            cout<<j; 
+           
+        }
+        cout<<endl;
+        space-=2;
     }
-   
 }
 int main(){
     int t=1;
     for(int i=0; i<t; i++){
         int n=4;
-        print7(n);
-        print8(n);
+        // cin>>n;
+        print12(n);
     }
-    return 0;
 }
-//     ***    
-//    *****   
-//   *******  
-//  ********* 
-//  ********* 
-//   *******  
-//    *****   
-//     ***    
+
