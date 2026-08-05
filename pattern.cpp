@@ -559,7 +559,7 @@ cout<<"*";
         else space +=2;
      }
 }
-int print21(int n){
+void print21(int n){
     for(int i=0;i<n;i++){
         for(int j=0;j<n;j++){
             if(i ==0||j==0||i==n-1||j==n-1){
@@ -568,6 +568,13 @@ int print21(int n){
             else cout<<" ";
         }
         cout<<endl;
+    }
+}
+void print22(int n){
+    for(int i=0;i<2*n-1;i++){
+        for(int j=0;j<2*n-1;j++){
+
+        }
     }
 }
 int main()
