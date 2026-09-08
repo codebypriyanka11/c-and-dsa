@@ -86,20 +86,38 @@ void mathematicalObservation(int n)
     {
         if (n % i == 0)
         {
-           ls.push_back(i);
+            ls.push_back(i);
             if ((n / i) != i)
             {
-               ls.push_back(n/i);  
+                ls.push_back(n / i);
             }
         }
     }
-    sort(ls.begin(),ls.end());
-    for(auto it : ls)cout<<it<<" ";
+    sort(ls.begin(), ls.end());
+    for (auto it : ls)
+        cout << it << " ";
+}
+void primeNumber(int n)
+{
+    int counter = 0;
+    for(int i = 1; i*i <= n; i++) {
+        if (n % i == 0)
+        {
+            counter++;
+            if((n/i)!= i) counter++;
+        }
+    }
+    if (counter == 2){
+            cout <<  "is a prime number";
+        }
+        else{
+            cout <<  "is not a prime number";
+        }
 }
 
 int main()
 {
-    int n = 30;
+    int n = 11;
 
     //    cout << count(n);
     // cout << secondCount(n);
@@ -107,5 +125,6 @@ int main()
     //    palindrome(n);
     // armstrong(n);
     // divisor(n);
-    mathematicalObservation(n);
+    // mathematicalObservation (n);
+    primeNumber (n);
 }
