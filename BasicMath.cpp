@@ -114,6 +114,50 @@ void primeNumber(int n)
             cout <<  "is not a prime number";
         }
 }
+void GCDandHCF (){
+int n1 = 12 ;
+int n2 = 34;
+int gcd = 1;
+for (int i = 1 ; i <= min(n1,n2) ; i++){
+    if(n1%i==0 && n2%i==0){
+        gcd=i;
+    }
+}
+cout<< gcd <<" is GCD / HCF of "<< n1 << " and " <<n2 <<endl;
+}
+void otherWayToGCD(){
+    int n1 = 72 ;
+int n2 = 36;
+int gcd = 1;
+for (int i = min(n1,n2) ; i >= 1  ; i--){
+    if(n1%i==0 && n2%i==0){
+        gcd=i;
+        break;
+    }
+}
+cout<< gcd <<" is GCD / HCF of "<< n1 << " and " <<n2 <<endl;
+}
+void euclidenAlgoritham(){
+    int n1 = 10;
+    int copyn1 = n1 ;
+    int n2 = 25;
+    int copyn2 = n2;
+   while(n1>0 && n2>0){
+
+    if(n1>n2){
+        n1 = n1%n2;
+    }else{
+        n2 = n2%n1;
+    }
+
+   }
+   if(n1==0){
+    cout<< n2 << " is the gcd of "<< copyn1 <<" and "<<copyn2<<endl;
+   }else{
+     cout<< n1 << " is the gcd of "<< copyn1 <<" and "<<copyn2<<endl;
+   }
+    
+}
 
 int main()
 {
@@ -126,5 +170,8 @@ int main()
     // armstrong(n);
     // divisor(n);
     // mathematicalObservation (n);
-    primeNumber (n);
+    // primeNumber (n);
+    //  GCDandHCF();
+    //  otherWayToGCD();
+    euclidenAlgoritham();
 }
