@@ -39,17 +39,32 @@ int sumOfNum(int i,int n){
     }
     return i + sumOfNum(i - 1, n);
 } 
-
-
+int sumOfNum2(int n,int sum){
+    if(n<1){
+return sum ;
+    }
+    sumOfNum2(n-1,sum+n);
+}
+int factorial(int n , int f){
+    
+    if(n<1){
+        return f;
+    }
+    factorial(n-1,f*n);
+}
 
 
 int main() {
  int n = 5;
  int s= 1;
+ int sum = 0;
+ int factorial1 = 1;
 //  name(s,n);
 // name2(s,n);
 // printNumber(s,n); 
 // reverseNumber(n,n);
-cout<<sumOfNum(n,n);
+// cout<<sumOfNum(n,n);
+// cout<<sumOfNum2(n,sum);
+cout<<factorial(n,factorial1);
 return 0;
 }
