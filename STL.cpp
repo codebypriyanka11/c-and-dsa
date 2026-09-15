@@ -21,8 +21,8 @@ void explainVector()
     cout << "vector size of vec1 :" << vec1.size() << endl;
     cout << endl;
 
-    //  yaha ham vec ka size bata raha hai (3) or sirf ak hi element repeatedly rakh rahe hai(3)
-    vector<char> vec2(2, 3);
+    //  yaha ham vec ka size bata raha hai (3) or sirf ak hi element repeatedly likah rahe hai(3)
+    vector<char> vec2(5,10);
     cout << "element in vec2:" << " ";
     for (int val : vec2)
     {
@@ -45,7 +45,7 @@ void explainVector()
     vec.pop_back();
 
     //   for each
-    cout << " without using erase method :" << " ";
+    cout << " without using erase method in vec :" << " ";
     for (int val : vec)
     {
         cout << val << " ";
@@ -93,7 +93,7 @@ void vectorMethod()
     cout << "capacity of vec : " << " " << vec.capacity() << endl;
 
     // vector iterators
-    // vec.begin --> se hame us element ki ememory ki location mil jati hai or fir ham dereference (*) use kar ke us element ko acess kar sakte hai
+    // vec.begin --> se hame us first element ki ememory ki location mil jati hai or fir ham dereference (*) use kar ke us element ko acess kar sakte hai
     // vec.end --> last element ko nahi balki uss se agle vali location ko point karta hai jaha garbage value store hoti hai
     cout << "vector first element" << " " << *(vec.begin()) << endl;
     cout << "vector last element" << " " << *(vec.end() - 1) << endl;
@@ -114,7 +114,7 @@ void vectorMethod()
         cout << *(it) << " ";
     }
     cout << endl;
-    // you can also write thi like this -->
+    // you can also write it like this -->
     // first way -->
     // cout<<"backword for loop in vector iterator :" <<" ";
     // for(auto it = vec.rbegin();it != vec.rend() ; it++){
@@ -509,7 +509,7 @@ cout<<" search 4 in vec1 :" <<" " <<binary_search(vec1.begin(),vec1.end(),4)<<en
 }
 int main() 
 {
-    // explainpair();
+    explainpair();
     // explainVector();
     // vectorMethod();
     // explainList();
@@ -525,6 +525,6 @@ int main()
     // explainunordredset();
     // explainsorting();
     // explaincostomcomparator();
-    otheralgorithm();
+    // otheralgorithm();
     return 0;
 }

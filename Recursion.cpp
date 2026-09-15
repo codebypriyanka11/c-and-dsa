@@ -52,6 +52,38 @@ int factorial(int n , int f){
     }
     factorial(n-1,f*n);
 }
+void  reverseArray (int arr[],int start,int last){
+    if(start>=last) {
+      
+    }else{
+        swap(arr[start],arr[last]);
+        reverseArray(arr,start+1,last-1);
+    }
+        
+   
+}
+void secondReveseArray(int arr[],int i ,int n){
+    if(i >= n/2){
+
+    }else{
+        swap(arr[i],arr[n-i]);
+        secondReveseArray(arr,i+1,n);
+    }
+}
+bool checkStringPalndrom(int i, string &s){
+    if(i>=s.size()){
+
+    }else{
+        if(s[i] != s[s.size()-i-1]){
+            cout<<"False"<<endl;
+        }else{
+           return checkStringPalndrom(i+1,s);
+        }
+       
+    }
+
+}
+
 
 
 int main() {
@@ -59,12 +91,21 @@ int main() {
  int s= 1;
  int sum = 0;
  int factorial1 = 1;
+ int arr[n] = {1,2,3,4,5};
+//  reverseArray(arr,0,n-1);
+// secondReveseArray(arr,0,n-1);
+//  cout<<"Reverse Array"<<endl;
+//  for(int i=0;i<=n-1;i++){
+//     cout<<arr[i]<<" ";
+//  } 
+  string str = "madam";
+  cout<<checkStringPalndrom(0,str);
 //  name(s,n);
 // name2(s,n);
 // printNumber(s,n); 
 // reverseNumber(n,n);
 // cout<<sumOfNum(n,n);
 // cout<<sumOfNum2(n,sum);
-cout<<factorial(n,factorial1);
+// cout<<factorial(n,factorial1);
 return 0;
 }
