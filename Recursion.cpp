@@ -18,8 +18,7 @@ int printNumber(int s,int n){
     }
     // else{
     //      cout<<s<<' '<<endl;
-    // }
-     
+    // }  
 printNumber(s+1,n);
  cout<<s<<' '<<endl;
 
